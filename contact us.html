@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UID-PROJECT TEAM12</title>
+    <link rel="stylesheet" href="css/contactus.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label> 
+            <label for="logo" class="logo"><span>ARK</span>Events</label>
+            <img src="D:\Screenshot 2024-03-31 092904.png">
+            <ul class="menu">
+                <li><a href="file:///D:/vscode/project/home.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a class="active" href="file:///D:/vscode/project/css/contact%20us.html">Set up a meeting</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="map">
+        <div class="map-container">
+            <br>
+            <br>
+            <p style="color: white;">726G+QG Vengal, Tamil Nadu</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4759.260394665137!2d80.02410048932714!3d13.262251270373671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52814946112d6f%3A0x57a644f6f25f9b0c!2sAmrita%20Vishwa%20Vidyapeetham%20Chennai!5e0!3m2!1sen!2sin!4v1712032144600!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <div class="form-container">
+            <h2>Your Details</h2>
+            <form action="ContactFormServlet.java" method="post">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Enter your name:" required>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="phone">Contact No: </label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your contact number">
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" placeholder="Enter your message/ Any queries" rows="4" required></textarea>
+                <button type="submit" class="submit-button">Say Hi!</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <address>
+            ARKEvents<br>
+            Amrita Vishwa Vidhyapetham, Chennai Campus<br>
+            Thiruvallur-601 103<br>
+            Email: <a href="mailto:ARKevents@gmail.com">ARKevents@gmail.com</a>
+        </address>
+    </section>
+    <footer>
+        <p>© 2024 ARK Events. All rights reserved.</p>
+    </footer>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var message = document.getElementById("message").value;
+            if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+                alert("Please fill in all required fields.");
+                return false; 
+            }
+            return true; 
+        }
+    </script>
+</body>
+</html>
