@@ -34,7 +34,7 @@ public class ContactFormServlet extends HttpServlet implements DatabaseOperation
         saveFormDataToDatabase(name, email, phone, message);
 
         // Redirect to a success page
-        response.sendRedirect("contactus.html");
+        response.sendRedirect("contact us.html");
     }
 
     // Method to save form data to the database
